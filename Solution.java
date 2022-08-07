@@ -22,9 +22,7 @@ public class Solution extends JFrame{
       System.out.println("Enter the Diameter of the Circle\n");
       int x;
       x = sc.nextInt();
-      if (x < 50){
-        x *= 10;
-      }
+      if (x < 50) x *= 10;
       g.drawOval(100, 100, x, x);
     }else if(input == 2){
       System.out.println("Rectangle Selected \n");
