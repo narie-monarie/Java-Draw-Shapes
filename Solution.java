@@ -2,17 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 
-public class Solution extends JFrame{
-
-  public Solution(){
+public class Solution extends JFrame{ // inheritance
+  public Solution(){ //constructor
     setTitle("Shapes");
     setBounds(50, 50, 500, 500);
     setVisible(true);    
     setDefaultCloseOperation(EXIT_ON_CLOSE);
   }
-
+  
   @Override
-  public void paint(Graphics g){
+  public void paint(Graphics g){ // method
     Graphics2D g2d = (Graphics2D) g;
     System.out.println("Enter the shape u want to draw: \n 1. Circle \n 2. Rectangle \n 3. Triangle \n");
     Scanner sc = new Scanner(System.in);
@@ -65,6 +64,6 @@ public class Solution extends JFrame{
     }
   }
   public static void main(String[] args) {
-    new Solution();
+    new Solution(); //object
   }
 }
